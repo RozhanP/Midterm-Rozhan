@@ -36,13 +36,6 @@ router.post('/add', (req, res, next) => {
         "Author": "J. R. R. Tolkien",
         "Genre": "Fantasy"
     });
-    ({
-        "Title": "The Two Towers",
-        "Description": "Frodo and the Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. ",
-        "Price": 9.64,
-        "Author": "J. R. R. Tolkien",
-        "Genre": "Fantasy"
-    });
     books_1.default.create(newBook, function (err) {
         if (err) {
             console.log(err);
